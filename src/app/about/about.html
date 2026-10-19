@@ -1,0 +1,114 @@
+<div class="container py-5">
+
+  <div class="text-center mb-5">
+
+    <h1 class="fw-bold">
+      About Us
+    </h1>
+
+    <p class="text-muted fs-5">
+      We help students learn modern web development through practical training.
+    </p>
+
+  </div>
+
+
+  <div class="row align-items-center g-5">
+
+    <div class="col-md-6">
+
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+        class="img-fluid rounded-4 shadow"
+        alt="Students"
+      >
+
+    </div>
+
+
+    <div class="col-md-6">
+
+      <h2 class="fw-bold mb-3">
+        Learn By Building
+      </h2>
+
+      <p class="text-muted">
+        Our goal is to teach development concepts through real examples
+        instead of only theoretical explanations.
+      </p>
+
+
+      <div class="list-group mt-4">
+
+        <div class="list-group-item">
+          ✅ Real-world examples
+        </div>
+
+        <div class="list-group-item">
+          ✅ Practical assignments
+        </div>
+
+        <div class="list-group-item">
+          ✅ Modern Angular
+        </div>
+
+        <div class="list-group-item">
+          ✅ Clean project structure
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Statistics -->
+
+  <div class="row text-center mt-5 g-4">
+
+    <div class="col-md-4">
+        <app-card>
+           <h2 class="text-primary fw-bold">
+            500+
+          </h2>
+
+          <p class="mb-0">
+            Students
+          </p>
+        </app-card>
+    </div>
+
+
+    <div class="col-md-4">
+      <app-card>
+           <h6>Hello World</h6>
+        </app-card>
+    </div>
+
+
+    <div class="col-md-4">
+      <app-card>
+           <h2 class="text-primary fw-bold">
+            500+
+           </h2>
+
+           <h3>Card Title</h3>
+        </app-card>
+    </div>
+
+  </div>
+
+  <ng-template #hambozo>
+    <h1>Data Not Found</h1>
+  </ng-template>
+
+  <button class="btn btn-primary m-3" (click)="show = !show ">Toggle</button>
+
+  @if (show) {
+    <h1>Data is here</h1>
+  }@else {
+    <ng-container [ngTemplateOutlet]="hambozo"></ng-container>
+  }
+
+</div>

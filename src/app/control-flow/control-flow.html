@@ -1,0 +1,49 @@
+<div class="container">
+    @for (friend of friendArrays; track $index) {
+        <h1>{{friend}}</h1>
+    }@empty {
+        <div class="alert alert-danger">Empty Data</div>
+    }
+</div>
+
+
+
+<button class="btn btn-success" (click)="toggleFlag()">Toggle</button>
+
+@if(flag){
+    <h1>Route Academy</h1>
+}@else{
+    <h1>Flag False</h1>
+}
+
+@switch(num){
+    @case (1) {
+        <h1>1</h1>
+    }
+
+    @case (2) {
+        <h1>2</h1>
+    }
+
+    @case (3) {
+        <h1>3</h1>
+    }
+    @default {
+        <h1>No Match Cases</h1>
+    }
+}
+
+
+! Contextual Variable
+<!--  -->
+<!-- 1- $count >> length of friendArrays -->
+<!--  -->
+<!-- 2- $odd >> odd index -->
+<!--  -->
+<!-- 3- $even >> even index -->
+<!--  -->
+<!-- 4- $first -->
+<!--  -->
+<!-- 5- $last -->
+<!--  -->
+<!-- --> 

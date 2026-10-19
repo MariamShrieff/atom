@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  background-color: #f5f7fb;
+  color: #111827;
+}
+
+
+/* Page */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+
+/* Main Card */
+
+.student-card {
+  width: 100%;
+  max-width: 520px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow:
+    0 10px 30px
+    rgba(15, 23, 42, 0.08);
+}
+
+
+/* Header */
+
+.student-card__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 28px;
+  background-color: #1e3557;
+  color: #ffffff;
+}
+
+
+.student-card__icon {
+  font-size: 36px;
+}
+
+
+.student-card__header h1 {
+  margin: 0 0 4px;
+  font-size: 28px;
+}
+
+
+.student-card__header p {
+  margin: 0;
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+
+/* Actions */
+
+.student-card__actions {
+  padding: 24px 24px 10px;
+}
+
+
+.toggle-button {
+  width: 220px;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2f80ed;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.toggle-button:hover {
+  background-color: #1f6fd1;
+}
+
+
+/* Students List */
+
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 24px 28px;
+}
+
+
+/* Student Item */
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  background-color: #f3f6fa;
+  border-radius: 10px;
+}
+
+
+.student-info h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: #111827;
+}
+
+
+.student-info p {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #475569;
+}
+
+
+/* Badge */
+
+.badge {
+  min-width: 90px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* Adult */
+
+.badge--adult {
+  background-color: #b7f3cc;
+  color: #15803d;
+}
+
+
+/* Minor */
+
+.badge--minor {
+  background-color: #ffc4c4;
+  color: #dc2626;
+}

@@ -1,0 +1,63 @@
+students = 
+  [
+    {
+    id: 1,
+    name: 'Ahmed Mohamed',
+    age: 22,
+    grade: 92,
+    course: 'Angular',
+    email: 'ahmed@example.com',
+    attendance: 95,
+    isActive: true
+  },
+  {
+    id: 2,
+    name: 'Sara Ali',
+    age: 21,
+    grade: 88,
+    course: 'Frontend Development',
+    email: 'sara@example.com',
+    attendance: 90,
+    isActive: true
+  },
+  {
+    id: 3,
+    name: 'Omar Hassan',
+    age: 23,
+    grade: 76,
+    course: 'Angular',
+    email: 'omar@example.com',
+    attendance: 82,
+    isActive: true
+  },
+  {
+    id: 4,
+    name: 'Mariam Adel',
+    age: 20,
+    grade: 95,
+    course: 'TypeScript',
+    email: 'mariam@example.com',
+    attendance: 98,
+    isActive: true
+  },
+  {
+    id: 5,
+    name: 'Youssef Khaled',
+    age: 24,
+    grade: 64,
+    course: 'JavaScript',
+    email: 'youssef@example.com',
+    attendance: 70,
+    isActive: false
+  },
+  {
+    id: 6,
+    name: 'Nour Ahmed',
+    age: 22,
+    grade: 81,
+    course: 'Angular',
+    email: 'nour@example.com',
+    attendance: 87,
+    isActive: true
+  }
+  ]
